@@ -65,6 +65,6 @@ static void test_strict_border_array(void)
 int main(void)
 {
     test_border_array();
-    test_strict_border_array();
+   // test_strict_border_array();
     return 0;
 }

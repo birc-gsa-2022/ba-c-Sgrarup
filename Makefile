@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup/CMakeFiles" "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup/src//CMakeFiles/progress.marks"
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup/CMakeFiles" "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup//CMakeFiles/progress.marks"
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -113,94 +113,44 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-src/CMakeFiles/gsa.dir/rule:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/gsa.dir/rule
-.PHONY : src/CMakeFiles/gsa.dir/rule
+#=============================================================================
+# Target rules for targets named gsa
 
-# Convenience name for target.
-gsa: src/CMakeFiles/gsa.dir/rule
+# Build rule for target.
+gsa: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gsa
 .PHONY : gsa
 
 # fast build rule for target.
 gsa/fast:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/build
 .PHONY : gsa/fast
 
-# Convenience name for target.
-src/CMakeFiles/ba_test.dir/rule:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ba_test.dir/rule
-.PHONY : src/CMakeFiles/ba_test.dir/rule
+#=============================================================================
+# Target rules for targets named ba_test
 
-# Convenience name for target.
-ba_test: src/CMakeFiles/ba_test.dir/rule
+# Build rule for target.
+ba_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ba_test
 .PHONY : ba_test
 
 # fast build rule for target.
 ba_test/fast:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ba_test.dir/build.make src/CMakeFiles/ba_test.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ba_test.dir/build.make src/CMakeFiles/ba_test.dir/build
 .PHONY : ba_test/fast
-
-ba.o: ba.c.o
-.PHONY : ba.o
-
-# target to build an object file
-ba.c.o:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/ba.c.o
-.PHONY : ba.c.o
-
-ba.i: ba.c.i
-.PHONY : ba.i
-
-# target to preprocess a source file
-ba.c.i:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/ba.c.i
-.PHONY : ba.c.i
-
-ba.s: ba.c.s
-.PHONY : ba.s
-
-# target to generate assembly for a file
-ba.c.s:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gsa.dir/build.make src/CMakeFiles/gsa.dir/ba.c.s
-.PHONY : ba.c.s
-
-ba_test.o: ba_test.c.o
-.PHONY : ba_test.o
-
-# target to build an object file
-ba_test.c.o:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ba_test.dir/build.make src/CMakeFiles/ba_test.dir/ba_test.c.o
-.PHONY : ba_test.c.o
-
-ba_test.i: ba_test.c.i
-.PHONY : ba_test.i
-
-# target to preprocess a source file
-ba_test.c.i:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ba_test.dir/build.make src/CMakeFiles/ba_test.dir/ba_test.c.i
-.PHONY : ba_test.c.i
-
-ba_test.s: ba_test.c.s
-.PHONY : ba_test.s
-
-# target to generate assembly for a file
-ba_test.c.s:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ba_test.dir/build.make src/CMakeFiles/ba_test.dir/ba_test.c.s
-.PHONY : ba_test.c.s
 
 # Help Target
 help:
@@ -213,12 +163,6 @@ help:
 	@echo "... test"
 	@echo "... ba_test"
 	@echo "... gsa"
-	@echo "... ba.o"
-	@echo "... ba.i"
-	@echo "... ba.s"
-	@echo "... ba_test.o"
-	@echo "... ba_test.i"
-	@echo "... ba_test.s"
 .PHONY : help
 
 
@@ -230,6 +174,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/sorengrarup/Desktop/genome algo/ba-c-Sgrarup" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
